@@ -2,7 +2,14 @@ package com.kh.practice.snack.model.vo;
 // vo. value object 값을 저장하고 관리하는 객체
 // dto. data tranfer object 데이터 처리 객체
 
-public class Snack {
+import java.io.Serializable;
+
+public class Snack implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	private String kind; // 종류
 	private String name; // 이름
 	private String flavor; // 맛
