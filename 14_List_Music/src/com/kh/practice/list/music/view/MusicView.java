@@ -93,8 +93,8 @@ public class MusicView {
 //		Music vo = new Music();
 //		vo.setTitle(title);
 //		vo.setSinger(singer);
-		int result = mc.addList(new Music(title,singer));
-		if(result>0) {
+		int result = mc.addList(new Music(title, singer));
+		if(result > 0) {
 			System.out.println("추가 성공");
 		} else {
 			System.out.println("추가 실패");
@@ -102,7 +102,7 @@ public class MusicView {
 		}
 		
 		
-		// TODO
+		
 	}
 
 	public void addAtZero() {
@@ -147,7 +147,16 @@ public class MusicView {
 	}
 
 	public void removeMusic() {
-		System.out.println("****** 특정 곡 정보 수정 ******");
+		System.out.println("****** 특정 곡 삭제 ******");
+		String title = sc.nextLine();
+		Music result = mc.removeMusic(title);
+
+		if(result==null) {
+			System.out.println("삭제할 곡이 없습니다");
+		} else {
+			System.out.printf("삭제한 곡은 000(%s ,%s) 입니다\n",result.getTitle(),result.getSinger());
+		}
+		
 		// TODO
 	}
 
