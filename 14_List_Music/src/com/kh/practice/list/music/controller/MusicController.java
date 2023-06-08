@@ -7,25 +7,25 @@ import com.kh.practice.list.music.model.vo.Music;
 
 public class MusicController {
 	private List<Music> list = new ArrayList<Music>();
-	
+
 	public MusicController() {
 		// list에 초기 곡 10곡 미리 입력해두기
-		list.add(new Music("aa","aaa"));
-		list.add(new Music("bb","bbb"));
-		list.add(new Music("cc","ccc"));
-		list.add(new Music("dd","ddd"));
-		list.add(new Music("ee","eee"));
-		list.add(new Music("ff","fff"));
-		list.add(new Music("xx","xxx"));
-		list.add(new Music("qq","qqq"));
-		list.add(new Music("aa","aaas"));
-		list.add(new Music("dd","ddd"));
+		list.add(new Music("aa", "aaa"));
+		list.add(new Music("bb", "bbb"));
+		list.add(new Music("cc", "ccc"));
+		list.add(new Music("dd", "ddd"));
+		list.add(new Music("ee", "eee"));
+		list.add(new Music("ff", "fff"));
+		list.add(new Music("xx", "xxx"));
+		list.add(new Music("qq", "qqq"));
+		list.add(new Music("aa", "aaas"));
+		list.add(new Music("dd", "ddd"));
 	}
 
 	public int addList(Music music) {
 		int result = 0; // 0 추가실패,1추가성공
 		if (list.add(music)) { // 추가
-			list.add(new Music("aa","aaa"));
+			list.add(new Music("aa", "aaa"));
 			result = 1; //
 		}
 
@@ -51,24 +51,40 @@ public class MusicController {
 
 	public Music SearchMusic(String title) {
 		Music result = null;
-		for(Music vo : list) {
-			if(vo.getTitle().equals(title)) {
-				result = vo;
+		for (Music vo : list) {
+			if (vo.getTitle().equals(title)) { // title이 같은 것을 찾아
+				result = vo; // 찾은 Music 객체 vo를 return
 				break;
 			}
 		}
-		// TODO
+		
 		return result;
 	}
 
 	public Music removeMusic(String title) {
-		// TODO
-		return null;
+		Music result = null;
+		for (Music vo : list) {
+			if (vo.getTitle().equals(title)) {
+				list.remove(vo);
+				result = vo;
+				break;
+			}
+		}
+		return result;
 	}
 
 	public Music setMusic(String title, Music music) {
-		// TODO
-		return null;
+		Music result = null;
+		for (Music vo : list) {
+			if (vo.getTitle().equals(title)) { // title이 같은 것을 찾아
+				result = vo; // 찾은 Music 객체 vo를 return
+				vo = music;
+				
+				break;
+			}
+		}
+		
+		return result;
 	}
 
 	public int ascTitle() {
@@ -77,4 +93,9 @@ public class MusicController {
 		return result;
 	}
 
+	public int descSingle() {
+		int result = 0;
+		// TODO
+		return result;
+	}
 }
