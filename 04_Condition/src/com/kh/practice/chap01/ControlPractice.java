@@ -283,6 +283,58 @@ public class ControlPractice {
 		sc.close(); // 스캐너 끝
 		
 	}
+	
+	public void practice7() {
+		
+		/* 문제 7
+		키, 몸무게를 double로 입력 받고 BMI지수를 계산하여 계산 결과에 따라
+		저체중/정상체중/과체중/비만을 출력하세요.
+		BMI = 몸무게 / (키(m) * 키(m))
+		BMI가 18.5미만일 경우 저체중 / 18.5이상 23미만일 경우 정상체중
+		BMI가 23이상 25미만일 경우 과체중 / 25이상 30미만일 경우 비만
+		BMI가 30이상일 경우 고도 비만
+
+		ex.
+		키(m)를 입력해 주세요 : 1.65
+		몸무게(kg)를 입력해 주세요 : 58.4
+		
+		BMI 지수 : 21.45087235996327
+		정상체중		
+		 */
+
+		Scanner sc = new Scanner(System.in); // 스캐너 시작
+
+		System.out.print("키(m)를 입력해 주세요 : ");
+		double height = sc.nextDouble(); // 키 입력
+
+		System.out.print("몸무게(kg)를 입력해 주세요 : ");
+		double weight = sc.nextDouble(); // 몸무게 입력
+
+		double bmi = weight / (height * height); // BMI = 몸무게 / (키(m) * 키(m))
+		
+		System.out.println();
+
+		if (bmi < 18.5) { // BMI가 18.5 미만이면 출력
+			System.out.println("BMI 지수 : " + bmi);
+			System.out.println("저체중");
+		} else if (bmi < 23) { // BMI가 23 미만이면 출력
+			System.out.println("BMI 지수 : " + bmi);
+			System.out.println("정상체중");
+		} else if (bmi < 25) { // BMI가 25 미만이면 출력
+			System.out.println("BMI 지수 : " + bmi);
+			System.out.println("과체중");
+		} else if (bmi < 30) { // BMI가 30 미만이면 출력
+			System.out.println("BMI 지수 : " + bmi);
+			System.out.println("비만");
+		} else { // BMI가 그 외(30 이상)면 출력
+			System.out.println("BMI 지수 : " + bmi);
+			System.out.println("고도 비만");
+		}
+
+		sc.close(); // 스캐너 끝
+		
+	}
+
 
 
 
