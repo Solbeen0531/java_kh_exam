@@ -334,6 +334,63 @@ public class ControlPractice {
 		sc.close(); // 스캐너 끝
 		
 	}
+	
+	public void practice8() {
+		
+		/* 문제 8
+		키보드로 두 개의 정수와 연산 기호를 입력 받아 연산 기호에 맞춰 연산 결과를 출력하세요.
+		(단, 두 개의 정수 모두 양수일 때만 작동하며 없는 연산 기호를 입력 했을 시
+		“잘못 입력하셨습니다. 프로그램을 종료합니다.” 출력)
+
+		ex.
+		피연산자1 입력 : 15
+		피연산자2 입력 : 4
+		연산자를 입력(+,-,*,/,%) : /
+		
+		15 / 4 = 3.750000	
+		 */
+
+		Scanner sc = new Scanner(System.in); // 스캐너 시작
+
+		System.out.print("피연산자1 입력 : ");
+		int num1 = sc.nextInt(); // 정수1 입력
+
+		System.out.print("피연산자2 입력 : ");
+		int num2 = sc.nextInt(); sc.nextLine(); // 정수2 입력
+
+		System.out.print("연산자를 입력(+,-,*,/,%) : ");
+		String calc = sc.nextLine(); // 문자형 입력
+		
+		System.out.println();
+
+		if ((num1 > 0) && (num2 > 0)) { // 두 정수 모두 양수일 때 
+			switch (calc) {
+			case "+":
+				System.out.printf("%d + %d = %d ",num1,num2,num1+num2); // %d 정수형 출력
+				break;
+			case "-":
+				System.out.printf("%d - %d = %d ",num1,num2,num1-num2);
+				break;
+			case "*":
+				System.out.printf("%d * %d = %d ",num1,num2,num1*num2);
+				break;
+			case "/":
+				System.out.printf("%d / %d = %6f ",num1,num2,(double)num1/num2); // %f 실수형 출력 / %6f 소숫점 아래 6자리까지 출력
+				break;
+			case "%":
+				System.out.printf("%d %% %d = %d ",num1,num2,num1%num2); // printf에서 기호 %를 출력하려면 %% 사용해야 함
+				break;
+			default:
+				System.out.println("잘못 입력하였습니다. 프로그램을 종료합니다.");
+			}
+		} else { // 그외
+			System.out.println("양수가 아닌 정수는 연산되지 않습니다.");
+		}
+
+		sc.close(); // 스캐너 끝
+
+		}
+
 
 
 
