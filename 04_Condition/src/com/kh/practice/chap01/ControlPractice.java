@@ -389,7 +389,90 @@ public class ControlPractice {
 
 		sc.close(); // 스캐너 끝
 
+	}
+	
+	public void practice9() {
+		
+		/* 문제 9
+		중간고사, 기말고사, 과제점수, 출석회수를 입력하고 Pass 또는 Fail을 출력하세요.
+		평가 비율은 중간고사 20%, 기말고사 30%, 과제 30%, 출석 20%로 이루어져 있고
+		이 때, 출석 비율은 출석 회수의 총 강의 회수 20회 중에서 출석한 날만 따진 값으로 계산하세요.
+		70점 이상일 경우 Pass, 70점 미만이거나 전체 강의에 30% 이상 결석 시 Fail을 출력하세요.
+		
+		ex 1.
+		중간 고사 점수 : 80
+		기말 고사 점수 : 30
+		과제 점수 : 60
+		출석 회수 : 18
+		================= 결과 =================
+		중간 고사 점수(20) : 16.0
+		기말 고사 점수(30) : 9.0
+		과제 점수 (30) : 18.0
+		출석 점수 (20) : 18.0
+		총점 : 61.0
+		Fail [점수 미달]
+		
+		ex 2.
+		중간 고사 점수 : 80
+		기말 고사 점수 : 90
+		과제 점수 : 50
+		출석 회수 : 15
+		================= 결과 =================
+		중간 고사 점수(20) : 16.0
+		기말 고사 점수(30) : 27.0
+		과제 점수 (30) : 15.0
+		출석 점수 (20) : 15.0
+		총점 : 73.0
+		PASS
+		
+		ex 3.
+		중간 고사 점수 : 100
+		기말 고사 점수 : 80
+		과제 점수 : 40
+		출석 회수 : 10
+		================= 결과 =================
+		Fail [출석 회수 부족 (10/20)]
+		 */
+		
+		Scanner sc = new Scanner(System.in); // 스캐너 시작
+
+		System.out.print("중간 고사 점수 : ");
+		double middle = sc.nextDouble(); // 중간 고사 점수 입력
+		
+		System.out.print("기말 고사 점수 : ");
+		double end = sc.nextDouble(); // 기말 고사 점수 입력
+		
+		System.out.print("과제 점수 : ");
+		double task = sc.nextDouble(); // 과제 점수 입력
+		
+		System.out.print("출석 횟수 : ");
+		double attend = sc.nextDouble(); // 출석 횟수 입력
+		
+		double sum = middle / 100 * 20 + end / 100 * 30 + task / 100 * 30 + attend; // 총점 계산
+		
+		System.out.println("================= 결과 =================");
+		
+		if (attend <= 14) { // 총 강의 횟수 20 / 100 * 70 = 14
+			System.out.println("Fail [출석 횟수 부족 (" + (int) attend + "/20)]");
+		} else if (sum < 70) {
+			System.out.println("중간 고사 점수(20) : " + (middle / 100 * 20)); // 중간고사 20%
+			System.out.println("기말 고사 점수(30) : " + (end / 100 * 30)); // 기말고사 30%
+			System.out.println("과제 점수    (30) : " + (task / 100 * 30)); // 과제 30%
+			System.out.println("출석 점수    (20) : " + attend); // 출석 20%
+			System.out.println("총점 : " + sum);
+			System.out.println("Fail [점수 미달]");
+		} else {
+			System.out.println("중간 고사 점수(20) : " + (middle / 100 * 20)); // 중간고사 20%
+			System.out.println("기말 고사 점수(30) : " + (end / 100 * 30)); // 기말고사 30%
+			System.out.println("과제 점수    (30) : " + (task / 100 * 30)); // 과제 30%
+			System.out.println("출석 점수    (20) : " + attend); // 출석 20%
+			System.out.println("총점 : " + sum);
+			System.out.println("PASS");
 		}
+		
+		sc.close(); // 스캐너 끝
+		
+	}
 
 
 
