@@ -40,9 +40,13 @@ public class Run {
 		new ControlPractice().practice9(); // ControlPractice()에 정의된 practice9()을 실행한다
 		*/
 		
-		/* 문제 10 */
+		/* 문제 10 
 		new ControlPractice().practice10(); // ControlPractice()에 정의된 practice10()을 실행한다
-	
+		*/
+		
+		/* 문제 11 (Hard) */
+		new ControlPractice().practice11(); // ControlPractice()에 정의된 practice11()을 실행한다
+		
 	}
 
 }
