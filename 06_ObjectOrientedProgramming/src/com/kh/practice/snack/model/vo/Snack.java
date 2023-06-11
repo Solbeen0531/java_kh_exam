@@ -1,13 +1,12 @@
 package com.kh.practice.snack.model.vo;
 // vo. value object 값을 저장하고 관리하는 객체
+
 // dto. data tranfer object 데이터 처리 객체
 
 import java.io.Serializable;
 
-public class Snack implements Serializable{
-	/**
-	 * 
-	 */
+public class Snack implements Serializable {
+
 	private static final long serialVersionUID = 1L;
 
 	private String kind; // 종류
@@ -19,8 +18,8 @@ public class Snack implements Serializable{
 	public Snack() {
 
 	}
-	
-	// 값 생성자 대입,  getter/setter 필드 대입
+
+	// 값 생성자 대입, getter/setter 필드 대입
 
 	public Snack(String kind, String name, String flavor, int numOf, int price) {
 		this.kind = kind;
