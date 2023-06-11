@@ -84,7 +84,9 @@ public class ControlPractice {
 		} else {
 			System.out.println("잘못된 입력입니다.");
 		}
+		
 		sc.close(); // 스캐너 끝
+		
 	}
 	
 	public void practice3() {
@@ -135,8 +137,80 @@ public class ControlPractice {
 		} else { // 이외 출력
 			System.out.println("불합격입니다.");
 		}
+		
 		sc.close(); // 스캐너 끝
+		
 	}
+	
+	public void practice4() {
+		
+		/* 문제 4
+		if문으로 되어있는 봄, 여름, 가을, 겨울 예제를 switch문으로 바꿔서 출력하세요.
+
+		ex 1.
+		1~12 사이의 정수 입력 : 8
+		
+		8월은 여름입니다.
+
+		ex 2.
+		1~12 사이의 정수 입력 : 99
+		
+		99월은 잘못 입력된 달입니다.		
+		*/
+
+		Scanner sc = new Scanner(System.in); // 스캐너 시작
+
+		System.out.print("1~12 사이의 정수 입력 : ");
+		int season = sc.nextInt(); // 정수 입력
+		
+		System.out.println();
+		
+		switch(season) { 
+		case 1 :  // 1을 입력받았다면 출력
+			System.out.println(season+"월은 겨울입니다."); 						
+			break;
+		case 2 :
+			System.out.println(season+"월은 겨울입니다.");
+			break;
+		case 3 :
+			System.out.println(season+"월은 봄입니다.");
+			break;
+		case 4 :
+			System.out.println(season+"월은 봄입니다.");
+			break;
+		case 5 :
+			System.out.println(season+"월은 봄입니다.");
+			break;
+		case 6 :
+			System.out.println(season+"월은 여름입니다.");
+			break;
+		case 7 :
+			System.out.println(season+"월은 여름입니다.");
+			break;
+		case 8 :
+			System.out.println(season+"월은 여름입니다.");
+			break;
+		case 9 :
+			System.out.println(season+"월은 가을입니다.");
+			break;
+		case 10 :
+			System.out.println(season+"월은 가을입니다.");
+			break;
+		case 11 :
+			System.out.println(season+"월은 가을입니다.");
+			break;
+		case 12 :
+			System.out.println(season+"월은 겨울입니다.");
+			break;
+		default :
+			System.out.println(season+"월은 잘못 입력된 달입니다."); // 1~12가 아닌 정수를 입력받았다면 출력
+		
+		}
+		
+		sc.close(); // 스캐너 끝
+		
+	}
+
 
 
 
