@@ -248,6 +248,42 @@ public class ControlPractice {
 		sc.close(); // 스캐너 끝
 		
 	}
+	
+	public void practice6() {
+		
+		/* 문제 6
+		사용자에게 관리자, 회원, 비회원 중 하나를 입력 받아 각 등급이 행할 수 있는 권한을 출력하세요.
+		단, 관리자는 회원관리, 게시글 관리, 게시글 작성, 게시글 조회, 댓글 작성이 가능하고
+		회원은 게시글 작성, 게시글 조회, 댓글 작성이 가능하고
+		비회원은 게시글 조회만 가능합니다.
+
+		ex.
+		권한을 확인하고자 하는 회원 등급 : 관리자
+		
+		회원관리, 게시글 관리 게시글 작성, 댓글 작성 게시글 조회		
+		 */
+
+		Scanner sc = new Scanner(System.in); // 스캐너 시작
+
+		System.out.print("권한을 확인하고자 하는 회원 등급 : ");
+		String rank = sc.nextLine(); // 회원 등급 입력
+		
+		System.out.println();
+
+		if (rank.equals("관리자")) { // 관리자 입력 시 출력
+			System.out.println("회원관리, 게시글 관리, 게시글 작성, 게시글 조회, 댓글 작성");
+		} else if (rank.equals("회원")) { // 회원 입력 시 출력
+			System.out.println("게시글 작성, 게시글 조회, 댓글 작성");
+		} else if (rank.equals("비회원")) { // 비회원 입력 시 출력
+			System.out.println("게시글 조회");
+		} else { // 이외 출력
+			System.out.println("다시 시도해주세요");
+		}
+
+		sc.close(); // 스캐너 끝
+		
+	}
+
 
 
 
