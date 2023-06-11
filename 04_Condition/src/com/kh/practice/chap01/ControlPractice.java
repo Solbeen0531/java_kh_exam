@@ -210,6 +210,45 @@ public class ControlPractice {
 		sc.close(); // 스캐너 끝
 		
 	}
+	
+	public void practice5() {
+		
+		/* 문제 5
+		아이디, 비밀번호를 정해두고 로그인 기능을 작성하세요.
+		로그인 성공 시 “로그인 성공”,
+		아이디가 틀렸을 시 “아이디가 틀렸습니다.“,
+		비밀번호가 틀렸을 시 “비밀번호가 틀렸습니다.”를 출력하세요.
+
+		ex 1. 					ex 2. 					ex 3.
+		아이디 : myId 			아이디 : myId 			아이디 : my
+		비밀번호 : myPassword12 	비밀번호 : myPassword 		비밀번호 : myPassword12
+		로그인 성공 				비밀번호가 틀렸습니다. 		아이디가 틀렸습니다.		
+		 */
+
+		Scanner sc = new Scanner(System.in); // 스캐너 시작
+
+		System.out.print("아이디 : ");
+		String id = sc.nextLine(); // 아이디 입력
+
+		System.out.print("비밀번호 : ");
+		String pw = sc.nextLine(); // 비밀번호 입력
+		
+		System.out.println();
+
+		if ((id.equals("myId")) && (pw.equals("myPassword12"))) { // 입력한 아이디와 비밀번호의 값이 맞다면 출력
+			System.out.println("로그인 성공");
+		} else if (!(id.equals("myId")) && (pw.equals("myPassword12"))) { // 비밀번호만 맞을 때 출력
+			System.out.println("아이디가 틀렸습니다.");
+		} else if ((id.equals("myId")) && !(pw.equals("myPassword12"))) { // 아이디만 맞을 때 출력
+			System.out.println("비밀번호가 틀렸습니다.");
+		} else { // 이외 출력
+			System.out.println("로그인을 다시 시도해주세요"); 
+		}
+		
+		sc.close(); // 스캐너 끝
+		
+	}
+
 
 
 
