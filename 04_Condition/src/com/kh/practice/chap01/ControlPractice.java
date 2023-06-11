@@ -473,13 +473,68 @@ public class ControlPractice {
 		sc.close(); // 스캐너 끝
 		
 	}
+	
+	public void practice10() {
+		Scanner sc = new Scanner(System.in); // 스캐너 시작
 
-
-
-
-
-
-
-
+		System.out.println("실행할 기능을 선택하세요.");
+		System.out.println("1. 메뉴 출력");
+		System.out.println("2. 짝수/홀수");
+		System.out.println("3. 합격/불합격");
+		System.out.println("4. 계절");
+		System.out.println("5. 로그인");
+		System.out.println("6. 권한 확인");
+		System.out.println("7. BMI");
+		System.out.println("8. 계산기");
+		System.out.println("9. P/F");
+		
+		System.out.print("선택 : ");
+		int choice = sc.nextInt(); // 번호 입력
+		
+		switch (choice) {
+		case 1 :
+			System.out.println("(실습문제1 실행)");
+			new ControlPractice().practice1(); // ControlPractice()에 있는 practice1()을 실행
+			break;
+		case 2 :
+			System.out.println("(실습문제2 실행)");
+			practice2(); // practice2()을 실행. 동일 Class 내의 코드이기 때문에 Class 명시하지 않아도 실행됨
+			break;
+		case 3 :
+			System.out.println("(실습문제3 실행)");
+			practice3();
+			break;
+		case 4 :
+			System.out.println("(실습문제4 실행)");
+			practice4();
+			break;
+		case 5 :
+			System.out.println("(실습문제5 실행)");
+			practice5();
+			break;
+		case 6 :
+			System.out.println("(실습문제6 실행)");
+			practice6();
+			break;
+		case 7 :
+			System.out.println("(실습문제7 실행)");
+			practice7();
+			break;
+		case 8 :
+			System.out.println("(실습문제8 실행)");
+			practice8();
+			break;
+		case 9 :
+			System.out.println("(실습문제9 실행)");
+			practice9();
+			break;
+		default :
+			System.out.println("잘못된 번호입니다.");
+			break;
+				
+		}
+		
+		sc.close(); // 스캐너 끝
+	}
 
 }
