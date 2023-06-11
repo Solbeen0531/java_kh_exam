@@ -475,6 +475,24 @@ public class ControlPractice {
 	}
 	
 	public void practice10() {
+		
+		/* 문제 10
+		앞에 구현한 실습문제를 선택하여 실행할 수 있는 메뉴화면을 구현하세요.
+
+		ex.
+		실행할 기능을 선택하세요.
+		1. 메뉴 출력
+		2. 짝수/홀수
+		3. 합격/불합격
+		4. 계절
+		5. 로그인
+		6. 권한 확인
+		7. BMI
+		8. 계산기
+		9. P/F
+		선택 : 4 (실습문제4 실행)		
+		 */
+		
 		Scanner sc = new Scanner(System.in); // 스캐너 시작
 
 		System.out.println("실행할 기능을 선택하세요.");
