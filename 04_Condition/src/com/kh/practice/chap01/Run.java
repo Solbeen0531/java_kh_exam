@@ -1,0 +1,11 @@
+package com.kh.practice.chap01;
+
+public class Run {
+
+	public static void main(String[] args) {
+
+		new ControlPractice().practice1(); // ControlPractice()에 정의된 practice1()을 실행한다
+
+	}
+
+}
