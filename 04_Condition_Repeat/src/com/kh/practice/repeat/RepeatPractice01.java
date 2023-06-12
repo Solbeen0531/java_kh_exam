@@ -18,7 +18,7 @@ public class RepeatPractice01 {
 
 		Scanner sc = new Scanner(System.in); // 스캐너 시작
 		
-		System.out.print("1이상의 숫자를 입력하세요 : ");
+		System.out.print("1 이상의 숫자를 입력하세요 : ");
 		int num = sc.nextInt();
 		
 		if (num < 1) { // num이 1보다 작다면
