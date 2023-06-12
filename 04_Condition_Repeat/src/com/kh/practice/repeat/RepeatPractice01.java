@@ -23,6 +23,7 @@ public class RepeatPractice01 {
 		
 		if (num < 1) { // num이 1보다 작다면
 			System.out.println("1 이상의 숫자를 입력해주세요.");
+			
 		} else { 
 			for (int i = 1; i <= num; i++) { // 1부터 num까지 1씩 증가하여 출력
 				System.out.print(i + " ");
