@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class RepeatPractice09 {
 
 	public static void main(String[] args) {
-		
+
 		/* 문제 9
 		사용자로부터 입력 받은 숫자의 단부터 9단까지 출력하세요.
 		단, 9를 초과하는 숫자가 들어오면 “9 이하의 숫자만 입력해주세요”를 출력하세요.
@@ -17,7 +17,7 @@ public class RepeatPractice09 {
 		===== 7단 =====
 		===== 8단 =====
 		===== 9단 =====
-		(해당 단의 내용들은 길이 상 생략)		
+		(해당 단의 내용들은 길이 상 생략)
 		*/
 
 		Scanner sc = new Scanner(System.in); // 스캐너 시작

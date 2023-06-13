@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class RepeatPractice07 {
 
 	public static void main(String[] args) {
-		
+
 		/* 문제 7
 		위 문제와 모든 것이 동일하나, 1 미만의 숫자가 입력됐다면
 		“1 이상의 숫자를 입력해주세요”가 출력되면서 다시 사용자가 값을 입력하도록 하세요.
@@ -16,7 +16,7 @@ public class RepeatPractice07 {
 		4 5 6 7 8		4 5 6 7 8		1 이상의 숫자를 입력해주세요.
 										첫 번째 숫자 : 6
 										두 번째 숫자 : 2
-										2 3 4 5 6		
+										2 3 4 5 6
 		*/
 
 		Scanner sc = new Scanner(System.in); // 스캐너 시작

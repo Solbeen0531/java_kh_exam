@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class RepeatPractice10 {
 
 	public static void main(String[] args) {
-		
+
 		/* 문제 10
 		9번 문제와 모든 것이 동일하나, 9를 초과하는 숫자가 입력됐다면
 		“9 이하의 숫자를 입력해주세요”가 출력되면서 다시 사용자가 값을 입력하도록 하세요.
@@ -17,7 +17,7 @@ public class RepeatPractice10 {
 		===== 7단 ===== 			===== 9단 =====
 		===== 8단 =====
 		===== 9단 =====
-		(해당 단의 내용들은 길이 상 생략)		
+		(해당 단의 내용들은 길이 상 생략)
 		*/
 
 		Scanner sc = new Scanner(System.in); // 스캐너 시작
