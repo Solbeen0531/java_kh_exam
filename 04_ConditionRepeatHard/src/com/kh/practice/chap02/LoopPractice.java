@@ -143,21 +143,22 @@ public class LoopPractice {
 				// 입력한 값이 2보다 크거나 같으면
 			} else {
 
-				// i를 1부터 num까지 1씩 증가하여 반복
-				for (int i = 1; i <= num; i++) {
+				// i를 2부터 num까지 1씩 증가하여 반복
+				for (int i = 2; i <= num; i++) {
 
 					// num을 i로 나눈 나머지가 0이라면
 					if (num % i == 0) {
 						System.out.println(i);
 						// count값에 1씩 증가
 						count++;
+						
 					} else {
 						System.out.println("x");
 					}
 
 				}
 				// count값이 2라면 / 즉, 소수라면
-				if (count == 2) {
+				if (count == 1) {
 					System.out.println("소수입니다.");
 
 					// count 값이 2가 아니라면
