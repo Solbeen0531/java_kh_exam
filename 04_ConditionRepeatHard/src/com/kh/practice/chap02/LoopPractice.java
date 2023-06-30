@@ -153,7 +153,7 @@ public class LoopPractice {
 						count++;
 						
 					} else {
-						System.out.println("x");
+						
 					}
 
 				}
