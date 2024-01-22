@@ -48,5 +48,4 @@ public class VariablePractice1 {
 		sc.close();
 		// 스캐너를 모두 사용했으므로 닫는다 off
 	}
-
 }
