@@ -25,5 +25,4 @@ public class CastingPractice1 {
 
 		sc.close(); // 스캐너 끝
 	}
-
 }
