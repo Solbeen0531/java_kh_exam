@@ -65,6 +65,5 @@ public class CastingPractice3 { // 기능 제공용 클래스
 		System.out.println((int) ch); // 65
 		System.out.println((int) ch + iNum1); // 75
 		System.out.println("'" + (char) ((int) ch + iNum1) + "'"); // 'K'
-
 	}
 }
