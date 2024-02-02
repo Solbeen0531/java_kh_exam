@@ -3,7 +3,6 @@ package com.kh.practice.calc.func;
 import java.util.Scanner;
 
 public class CalcPractice2 {
-
 	public static void main(String[] args) {
 		
 		/* 문제 2 
@@ -33,5 +32,4 @@ public class CalcPractice2 {
 
 		sc.close(); // 스캐너 끝
 	}
-
 }
